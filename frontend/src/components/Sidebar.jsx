@@ -121,7 +121,7 @@ export const Sidebar = ({
       <div className="pt-3 border-t border-[#DDE2E8] space-y-1.5 mt-6">
         <button
   onClick={onOpenDocumentation}
-  className="w-full px-2.5 py-1.5 text-xs rounded-md bg-[#FAFAFC] hover:bg-[#F0F4F8] text-[#253449] transition flex items-center space-x-2 border border-[#DDE2E8] cursor-pointer"
+  className="w-full px-2.5 py-1.5 text-xs rounded-md bg-[#EAF2F8] hover:bg-[#DCEBF5] text-[#426B8A] transition flex items-center space-x-2 border border-[#C9DCEB] cursor-pointer font-medium"
 >
   <FileCode className="w-3.5 h-3.5 text-[#426B8A]" />
   <span>Documentation</span>
@@ -129,7 +129,7 @@ export const Sidebar = ({
 
         <button
           onClick={onOpenHelpModal}
-          className="w-full px-2.5 py-1.5 text-xs rounded-md bg-[#FAFAFC] hover:bg-[#F0F4F8] text-[#253449] transition flex items-center space-x-2 border border-[#DDE2E8] cursor-pointer"
+          className="w-full px-2.5 py-1.5 text-xs rounded-md bg-[#EAF2F8] hover:bg-[#DCEBF5] text-[#426B8A] transition flex items-center space-x-2 border border-[#C9DCEB] cursor-pointer font-medium"
         >
           <HelpCircle className="w-3.5 h-3.5 text-[#426B8A]" />
           <span>Theory & Formulas</span>
