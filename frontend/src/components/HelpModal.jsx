@@ -1,23 +1,17 @@
 import React from 'react';
-import { X, BookOpen } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 export const HelpModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-white border border-[#DDE2E8] rounded-lg w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-lg p-5 space-y-5">
+      <div className="bg-white border border-[#DDE2E8] rounded-lg w-full max-w-4xl h-[90vh] shadow-lg flex flex-col overflow-hidden">
         <div className="flex items-center justify-between border-b border-[#DDE2E8] pb-3">
           <div className="flex items-center space-x-2">
             <BookOpen className="w-4 h-4 text-[#426B8A]" />
             <h2 className="text-base font-bold text-[#253449]">Statistical T-Test Reference Guide</h2>
           </div>
-          <button
-            onClick={onClose}
-            className="p-1 rounded text-[#687586] hover:text-[#253449] hover:bg-[#F0F4F8] transition cursor-pointer"
-          >
-            <X className="w-4 h-4" />
-          </button>
         </div>
 
         <div className="space-y-5 text-xs text-[#253449] leading-relaxed">
