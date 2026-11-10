@@ -13,7 +13,8 @@ export const Sidebar = ({
   selectedTest, 
   onSelectTest, 
   onLoadPreset,
-  onOpenHelpModal
+  onOpenHelpModal,
+  onOpenDocumentation
 }) => {
   const testTypes = [
     {
@@ -118,15 +119,13 @@ export const Sidebar = ({
 
       {/* Footer Utilities */}
       <div className="pt-3 border-t border-[#DDE2E8] space-y-1.5 mt-6">
-        <a
-          href="/docs.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full px-2.5 py-1.5 text-xs rounded-md bg-[#FAFAFC] hover:bg-[#F0F4F8] text-[#253449] transition flex items-center space-x-2 border border-[#DDE2E8]"
-        >
-          <FileCode className="w-3.5 h-3.5 text-[#426B8A]" />
-          <span>Documentation</span>
-        </a>
+        <button
+  onClick={onOpenDocumentation}
+  className="w-full px-2.5 py-1.5 text-xs rounded-md bg-[#FAFAFC] hover:bg-[#F0F4F8] text-[#253449] transition flex items-center space-x-2 border border-[#DDE2E8] cursor-pointer"
+>
+  <FileCode className="w-3.5 h-3.5 text-[#426B8A]" />
+  <span>Documentation</span>
+</button>
 
         <button
           onClick={onOpenHelpModal}
