@@ -211,7 +211,7 @@ export default function App() {
       />
 
       {/* Main Workspace */}
-      <main className="flex-1 p-4 lg:p-6 space-y-5 overflow-x-hidden max-w-7xl mx-auto w-full">
+      <main className="flex-1 p-4 lg:p-6 space-y-5 overflow-x-hidden max-w-7xl lg:ml-64 w-full">
         {/* Top Header Bar */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-4 rounded-lg border border-[#DDE2E8] shadow-xs">
           <div>
