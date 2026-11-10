@@ -37,7 +37,7 @@ export const Sidebar = ({
   ];
 
   return (
-    <aside className="w-full lg:w-64 bg-white border-b lg:border-b-0 lg:border-r border-[#DDE2E8] p-4 flex flex-col justify-between shrink-0">
+    <aside className="w-full lg:w-64 lg:fixed lg:inset-y-0 lg:left-0 lg:h-screen lg:overflow-hidden lg:z-40 bg-white border-b lg:border-b-0 lg:border-r border-[#DDE2E8] p-4 flex flex-col justify-between shrink-0">
       <div className="space-y-6">
         {/* Brand Header */}
         <div className="flex items-center space-x-2.5 px-1 py-1">
