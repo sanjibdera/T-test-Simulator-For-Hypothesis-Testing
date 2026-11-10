@@ -13,6 +13,7 @@ import { ExportButton } from './components/ExportButton';
 import { HelpModal } from './components/HelpModal';
 import { api } from './services/api';
 import { AlertCircle } from 'lucide-react';
+import { DocumentationModal } from './components/DocumentationModal';
 
 export default function App() {
   const [selectedTest, setSelectedTest] = useState('one_sample');
@@ -22,6 +23,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [isDocumentationOpen, setIsDocumentationOpen] = useState(false);
 
   // Default initial run on mount
   useEffect(() => {
@@ -208,6 +210,7 @@ export default function App() {
         onSelectTest={handleSelectTest}
         onLoadPreset={handleLoadPreset}
         onOpenHelpModal={() => setIsHelpOpen(true)}
+        onOpenDocumentation={() => setIsDocumentationOpen(true)}
       />
 
       {/* Main Workspace */}
@@ -284,6 +287,7 @@ export default function App() {
 
       {/* Help Modal */}
       <HelpModal isOpen={isHelpOpen} onClose={() => setIsHelpOpen(false)} />
+      <DocumentationModal isOpen={isDocumentationOpen} onClose={() => setIsDocumentationOpen(false)}/>
     </div>
   );
 }
